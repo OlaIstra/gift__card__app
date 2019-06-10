@@ -1,0 +1,51 @@
+
+form p {
+	margin: 5px 0 20px;
+    color: #7b7a7a;
+    font-size: 14px;
+}
+
+form label {
+	display: none;
+}
+
+form .input__block {
+	display: flex;
+	justify-content: space-between;
+}
+
+form .input__block .input{
+	flex-direction: column;
+}
+
+form .input__block .input input{
+	height: 40px;
+	padding-left: 10px;
+}
+
+form .input__block .input:nth-child(1) {
+	width: 75%;
+}
+
+form .input__block .input:nth-child(2) {
+	width: 20%;
+}
+
+form .input {
+	flex-direction: row;
+}
+
+
+form .cardDiv {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    background: #d3d3d352;
+}
+
+form .cardDiv > p {
+	font-weight: bold;
+}
+

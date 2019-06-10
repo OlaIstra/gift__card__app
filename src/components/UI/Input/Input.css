@@ -1,0 +1,49 @@
+.input {
+	display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.input label{
+	width:100%;
+}
+
+.input input{
+    min-width: 20px;
+    height: 20px;
+}
+
+.input.invalid {
+	margin-bottom: 0px;
+}
+
+.input.invalid span{
+	margin-bottom: 6px;
+    color:red;
+    font-size: 10px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 12px;
+    line-height: 15px;
+    margin: -5px 5px 0 0;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: white;
+    background-color: #0c7b0cc4;
+    border: 1px solid #0c7b0cc4;
+}
